@@ -3,12 +3,16 @@
     <div class="row items-center justify-between" style="padding: 30px">
       <img src="https://a.espncdn.com/i/teamlogos/soccer/500/3454.png" alt="Vasco" width="42">
       <q-toolbar-title id="title">Modelagem Projeto</q-toolbar-title>
-      <q-btn flat >Cursos</q-btn>
-      <q-btn flat>Formações</q-btn>
-      <q-btn flat>Planos</q-btn>
+      <div id="btnWhite">
+        <q-btn flat >Cursos</q-btn>
+        <q-btn flat>Formações</q-btn>
+        <q-btn flat>Planos</q-btn>
+      </div>
       <div class="vl"></div>
-      <q-btn rounded id="login">Entrar</q-btn>
-      <q-btn rounded id="singin">Crie sua conta</q-btn>
+      <div id="btnGreen">
+        <q-btn rounded id="login">Entrar</q-btn>
+        <q-btn rounded id="singin">Crie sua conta</q-btn>
+      </div>
     </div>
   </q-header>
 </template>
@@ -52,10 +56,9 @@ button{
   .vl{
     visibility: hidden;
   }
-  #login, #singin {
-    margin-top: 5%;
-    background-color: #a3ffbf;
-    color: black;
+  #btnWhite, #btnGreen{
+    padding: 10px;
+    margin: 0 auto;
   }
 }
 

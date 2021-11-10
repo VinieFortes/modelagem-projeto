@@ -1,5 +1,5 @@
 <template>
-  <q-footer id="footer" style="background-color: #051d3b" class="text-white">
+  <q-footer id="footer" style="background-color: #051d3b" class="footer text-white">
     <div id="menu" class="q-pa-md row justify-between">
 
       <div class="column items-center q-pa-sm">
@@ -48,7 +48,6 @@
     </div>
     <div class="corpy row">
       <div>
-<!--        <img src="../assets/logofooter.png" alt="Vasco">-->
         <p>© Copyright. Todos os direitos reservados. <a href="#">Termo de Uso</a> <a href="#">Declaração de acessibilidade</a>   <a href="#">Política de privacidade</a></p>
       </div>
     </div>
@@ -80,6 +79,20 @@ q-item-label{
   text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
-
+  #menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .corpy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .corpy a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 </style>
