@@ -50,9 +50,6 @@ button{
 }
 
 @media only screen and (max-width: 600px) {
-  #title {
-    visibility: hidden;
-  }
   .vl{
     visibility: hidden;
   }

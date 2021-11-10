@@ -33,7 +33,7 @@
       <q-list padding class="wrap items-baseline">
 
         <q-item class="column items-center">
-          <q-item-label overline style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 10px">NAVEGACÃO</q-item-label>
+          <q-item-label overline style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 10px">NAVEGAÇÃO</q-item-label>
               <q-item-label style="color: white; margin-bottom: 5px">Home</q-item-label>
               <q-item-label style="color: white; margin-bottom: 5px">Sobre</q-item-label>
               <q-item-label style="color: white; margin-bottom: 5px">Contatos</q-item-label>
