@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/modelagem-projeto/',
   pluginOptions: {
     quasar: {
       importStrategy: 'kebab',
