@@ -1,8 +1,8 @@
 <template>
   <q-header id="header" reveal elevated class="text-white">
     <div class="row items-center justify-between" style="padding: 30px">
-      <img src="https://a.espncdn.com/i/teamlogos/soccer/500/3454.png" alt="Vasco" width="42">
-      <q-toolbar-title id="title">Modelagem Projeto</q-toolbar-title>
+      <router-link to="/"><img src="../assets/logo.png" alt="Vasco" width="136"></router-link>
+      <q-space/>
       <div id="btnWhite">
         <q-btn flat >Cursos</q-btn>
         <q-btn flat>Formações</q-btn>

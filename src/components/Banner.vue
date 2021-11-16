@@ -4,7 +4,6 @@
           v-model="slide"
           transition-prev="scale"
           transition-next="scale"
-          swipeable
           :autoplay="2000"
           infinite
           animated

@@ -2,7 +2,7 @@
   <div id="banner" class="flex-center justify-evenly row">
     <div class="text-white items-center flex column text-center q-pa-md">
       <q-icon name="event_available" size="52px" />
-      <p style="font-size: 18px">Acesso completo,<br> vitalicio !</p>
+      <p style="font-size: 18px">Acesso completo<br> vitalicio</p>
     </div>
     <div class="text-white items-center flex column text-center q-pa-md">
       <q-icon name="dark_mode" size="52px" />

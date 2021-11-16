@@ -3,8 +3,7 @@
     <div id="menu" class="q-pa-md row justify-between">
 
       <div class="column items-center q-pa-sm">
-        <img src="https://a.espncdn.com/i/teamlogos/soccer/500/3454.png" alt="Vasco" width="42">
-        <q-toolbar-title id="title">Modelagem Projeto</q-toolbar-title>
+        <img src="../assets/logo.png" alt="CommitMaster" width="164">
         <p id="slogan" class="q-pa-sm">Desenvolvendo o seu futuro profissional</p>
 
         <div class="row">
@@ -34,12 +33,12 @@
 
         <q-item class="column items-center">
           <q-item-label overline style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 10px">NAVEGAÇÃO</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Home</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Sobre</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Contatos</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Planos</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Cursos</q-item-label>
-              <q-item-label style="color: white; margin-bottom: 5px">Formação</q-item-label>
+              <router-link to="/"><q-item-label style="color: white; margin-bottom: 5px">Home</q-item-label></router-link>
+              <router-link to="#"><q-item-label style="color: white; margin-bottom: 5px">Sobre</q-item-label></router-link>
+              <router-link to="#"><q-item-label style="color: white; margin-bottom: 5px">Contatos</q-item-label></router-link>
+              <router-link to="#"><q-item-label style="color: white; margin-bottom: 5px">Planos</q-item-label></router-link>
+              <router-link to="#"><q-item-label style="color: white; margin-bottom: 5px">Cursos</q-item-label></router-link>
+              <router-link to="#"><q-item-label style="color: white; margin-bottom: 5px">Formação</q-item-label></router-link>
 
         </q-item>
 
@@ -94,5 +93,9 @@ q-item-label{
     flex-direction: column;
     text-align: center;
   }
+}
+a{
+  text-decoration: none;
+  margin-top: 5px;
 }
 </style>
