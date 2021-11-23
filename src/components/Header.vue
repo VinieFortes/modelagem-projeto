@@ -1,26 +1,44 @@
 <template>
-  <q-header id="header" reveal elevated class="text-white">
-    <div class="row items-center justify-between" style="padding: 30px">
+  <q-header id="header" reveal elevated class="text-white row justify-between q-pa-md items-center">
       <router-link to="/"><img src="../assets/logo.png" alt="Vasco" width="136"></router-link>
-      <q-space/>
-      <div id="btnWhite">
-        <q-btn flat >Cursos</q-btn>
-        <q-btn flat>Formações</q-btn>
-        <q-btn flat>Planos</q-btn>
+      <div class="row">
+        <div id="btnWhite">
+          <q-btn flat @click="scrollCursos">Cursos</q-btn>
+          <q-btn flat @click="scrollFormacoes">Formações</q-btn>
+          <q-btn flat @click="scrollPlanos">Planos</q-btn>
+        </div>
+        <div class="vl"></div>
+        <div id="btnGreen">
+          <q-btn @click="$emit('login')" rounded id="login">Entrar</q-btn>
+          <q-btn @click="$emit('singup')" rounded id="singin">Crie sua conta</q-btn>
+        </div>
       </div>
-      <div class="vl"></div>
-      <div id="btnGreen">
-        <q-btn rounded id="login">Entrar</q-btn>
-        <q-btn rounded id="singin">Crie sua conta</q-btn>
-      </div>
-    </div>
   </q-header>
 </template>
 
 <script>
 
 export default {
-  name: "Header"
+  name: "Header",
+  emits: ['login', 'singup'],
+  methods: {
+    scrollCursos() {
+      document.getElementById("ViewCursos").scrollIntoView({
+        behavior: "smooth"
+      });
+    },
+    scrollFormacoes() {
+      document.getElementById("FormacoesView").scrollIntoView({
+        behavior: "smooth"
+      });
+    },
+    scrollPlanos() {
+      document.getElementById("PlanosView").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }
+
 }
 </script>
 
@@ -30,11 +48,7 @@ export default {
   padding-left: 10px;
   background-color: #051933;
 }
-#title{
-  font-family: "love", Helvetica, Arial,serif;
-  font-size: 21px;
-  text-transform: uppercase;
-}
+
 .vl {
   border-left: 2px solid white;
   height: 20px;
@@ -50,6 +64,13 @@ button{
 }
 
 @media only screen and (max-width: 600px) {
+  #header{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .vl{
     visibility: hidden;
   }

@@ -1,5 +1,5 @@
 <template>
-<div ref="cursos" id="View" class=" row flex-center">
+<div ref="cursos" id="ViewCursos" class=" row flex-center">
   <p>Conheça nossos cursos</p>
   <q-btn rounded id="login">ver todos</q-btn>
 </div>
