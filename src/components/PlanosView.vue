@@ -2,7 +2,7 @@
   <div id="PlanosView" class="column">
     <p id="title">Conheça Nossos Planos</p>
     <div class="row justify-evenly">
-      <q-card v-for="card in cardsPlanos" v-bind:key="card" id="card" class="shadow-2">
+      <q-card v-for="card in cardsPlanos" v-bind:key="card" id="card" bordered class="shadow-2">
         <q-icon :name=card.icon size="md" color="primary"></q-icon>
         <p id="nomePlano">{{card.nome_plano}}</p>
         <p id="desconto">{{ card.desconto }}</p>
@@ -10,7 +10,7 @@
         <p id="preco">{{ card.preco }}</p>
         <p id="condicao">{{ card.condicao }}</p>
         <q-list bordered>
-          <q-item v-for="item in list" v-bind:key="item" clickable v-ripple>
+          <q-item v-for="item in list" v-bind:key="item" v-ripple>
             <q-item-section avatar>
               <q-icon color="primary" name="check" />
             </q-item-section>
@@ -53,7 +53,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-radius: 14px;
   padding: 5px;
   border-top: #0d47a1 solid;

@@ -28,7 +28,9 @@
       </q-card>
     </div>
 
-    <h5>TODO FORMAÇÔES DIV</h5>
+    <q-card>
+
+    </q-card>
 
   </div>
 </template>
@@ -41,6 +43,10 @@ export default {
 </script>
 
 <style scoped>
+#FormacoesView{
+  background-color: #1976d2;
+  height: 300px;
+}
 .card {
   margin-top: 2%;
   border-radius: 14px;
@@ -71,7 +77,7 @@ h5{
   font-size: 30px;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #082c57;
+  color: white;
   padding-top: 2%;
   align-self: center;
   position: relative;
