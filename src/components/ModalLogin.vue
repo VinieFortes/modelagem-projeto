@@ -4,7 +4,7 @@
       <div id="header" class="row">
         <p>Faça Login na sua conta</p>
         <q-space/>
-        <q-icon name="highlight_off" size="md" @click="$emit('close')"></q-icon>
+        <q-icon id="iconClose" name="highlight_off" size="md" @click="$emit('close')"></q-icon>
       </div>
       <q-form
           @submit="onSubmit"
@@ -39,7 +39,19 @@
 <script>
 export default {
   name: "ModalLogin",
-  emits: ['close']
+  data(){
+    return {
+      email: '',
+      password: ''
+    }
+  },
+  emits: ['close'],
+  methods: {
+    onSubmit(){
+      window.localStorage.setItem('login', '1')
+      document.location.reload(true);
+    }
+  }
 }
 </script>
 
@@ -67,5 +79,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#iconClose{
+  cursor: pointer;
 }
 </style>

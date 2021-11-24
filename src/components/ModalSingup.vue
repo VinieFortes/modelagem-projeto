@@ -4,7 +4,7 @@
       <div id="header" class="row">
         <p>Faça o seu cadastro</p>
         <q-space/>
-        <q-icon name="highlight_off" size="md" @click="$emit('close')"></q-icon>
+        <q-icon id="iconClose" name="highlight_off" size="md" @click="$emit('close')"></q-icon>
       </div>
       <q-form
           @submit="onSubmit"
@@ -77,5 +77,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#iconClose{
+  cursor: pointer;
 }
 </style>
