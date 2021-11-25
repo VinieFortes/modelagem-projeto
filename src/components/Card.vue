@@ -27,7 +27,7 @@
         </q-card-section>
       </q-card>
 
-      <q-card class="my-card">
+      <router-link to="/curso"><q-card class="my-card">
         <img style="background-color: #ff6600; height: 300px" src="https://cdn.freebiesupply.com/logos/thumbs/2x/kotlin-2-logo.png">
         <q-card-section>
           <div class="text-h6" style="margin-bottom: 10px" >Curso medio Kotlin</div>
@@ -36,7 +36,8 @@
             <span>Intermediário</span>
           </div>
         </q-card-section>
-      </q-card>
+      </q-card></router-link>
+
 
       <q-card class="my-card">
         <img style="background-color: #7f30cf" src="https://pnn.com.ua/Storage/BaseContents/2a8eef55-6923-4616-b483-3af535f9adfe/6f383c72-68d6-4b44-a973-48a0850e997f.png">
@@ -88,5 +89,9 @@ export default {
 }
 .text-h6{
   min-height: 100px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 </style>
