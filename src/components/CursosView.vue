@@ -18,13 +18,13 @@ p {
   font-size: 30px;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #082c57;
+  color: #263238;
   padding-top: 2%;
   align-self: center;
   position: relative;
 }
 button {
-  background-color: #082c57;
+  background-color: #263238;
   color: white;
   font-weight: bolder;
   display: flex;
@@ -43,11 +43,11 @@ button {
     font-size: 30px;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #082c57;
+    color: #263238;
     padding-top: 2%;
   }
   button {
-    background-color: #082c57;
+    background-color: #263238;
     color: white;
     position: relative;
   }

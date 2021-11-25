@@ -12,7 +12,7 @@
           <p style="font-size: 16px; font-weight: bolder; margin-left: 5px; margin-top: 16px">Aula Atual</p>
         </div>
         <p id="curso">01 - Introdução</p>
-        <q-linear-progress size="50px" :value="progress2" color="blue-10" class="q-mt-sm">
+        <q-linear-progress style="border-radius: 12px" size="25px" rounded :value="progress2" color="teal-10" class="q-mt-sm">
           <div class="absolute-full flex flex-center">
             <p id="porcentagem">{{progressLabel2}}</p>
           </div>
@@ -32,7 +32,7 @@
           <q-list bordered v-if="item.status === 1" id="listaOn">
             <q-item v-ripple>
               <q-item-section avatar>
-                <q-icon color="primary" :name=item.icon />
+                <q-icon color="teal-06" :name=item.icon />
               </q-item-section>
               <q-item-section>{{item.nome}}</q-item-section>
             </q-item>
@@ -41,7 +41,7 @@
           <q-list bordered v-else id="listaOff">
             <q-item v-ripple>
               <q-item-section avatar>
-                <q-icon color="primary" :name=item.icon />
+                <q-icon color="teal-06" :name=item.icon />
               </q-item-section>
               <q-item-section>{{item.nome}}</q-item-section>
             </q-item>
@@ -87,11 +87,11 @@ export default {
 
 <style scoped>
 #main{
-  color: #0d47a1;
+  color: #455a64;
   padding-bottom: 1px;
 }
 #atividades{
-  color: #0d47a1;
+  color: #455a64;
   margin-top: 1px;
 }
 #title, #atv{
@@ -103,7 +103,7 @@ export default {
 #curso{
   margin: 0 auto;
   font-size: 16px;
-  background-color: #0d47a1;
+  background-color: #455a64;
   color: white;
   font-weight: bolder;
   padding-left: 5px;
@@ -116,10 +116,9 @@ export default {
   color: white;
   font-weight: bolder;
   text-align: center;
-  margin-top: 10px;
 }
 #listaOn{
-  border-left: #0d47a1 solid 5px;
+  border-left: #004d40 solid 5px;
   margin-bottom: 2px;
   width: 100%;
 }
@@ -127,5 +126,9 @@ export default {
   border-left: red solid 5px;
   margin-bottom: 2px;
   width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #263238;
 }
 </style>

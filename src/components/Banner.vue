@@ -10,7 +10,8 @@
           control-color="white"
           navigation
           height="300px"
-          class="bg-primary text-white shadow-1"
+          class="text-white shadow-1"
+          style="background-color: #455a64"
       >
         <q-carousel-slide name="style" class="row no-wrap flex-center">
           <div class="text-center">

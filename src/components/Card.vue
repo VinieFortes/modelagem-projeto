@@ -2,7 +2,7 @@
   <q-scroll-area
       style="height: 550px"
       :bar-style="{ bottom: '4px', borderRadius: '5px', background: 'black', height: '10px', opacity: 1 }"
-      :thumb-style="{ bottom: '4px', borderRadius: '5px', background: '#051d3b', height: '10px', opacity: 1 }">
+      :thumb-style="{ bottom: '4px', borderRadius: '5px', background: '#263238', height: '10px', opacity: 1 }">
     <div class="q-pa-md row no-wrap justify-evenly q-gutter-md">
 
       <q-card class="my-card">

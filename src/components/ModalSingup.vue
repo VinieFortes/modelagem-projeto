@@ -17,6 +17,7 @@
             type="name"
             label="Seu nome de usuario"
             lazy-rules
+            color="blue-grey-10"
             :rules="[ val => val && val.length > 0 || 'O campo de nome não pode ficar em branco !']"
         />
 
@@ -26,6 +27,7 @@
             type="email"
             label="Seu e-mail"
             lazy-rules
+            color="blue-grey-10"
             :rules="[ val => val && val.length > 0 || 'O campo de e-mail não pode ficar em branco !']"
         />
         <q-input
@@ -34,12 +36,13 @@
             type="password"
             label="Sua senha"
             lazy-rules
+            color="blue-grey-10"
             :rules="[ val => val && val.length > 0 || 'O campo de senha não pode ficar em branco !']"
         />
-        <q-checkbox v-model="teal" label="Concordo com todos termos e bla bla" color="primary"/>
+        <q-checkbox v-model="teal" label="Concordo com todos termos e bla bla" color="blue-grey-10"/>
         <div>
-          <q-btn label="Cadastrar" type="submit" color="primary"/>
-          <q-btn label="Limpar Campos" type="reset" color="primary" flat class="q-ml-sm" />
+          <q-btn label="Cadastrar" type="submit" color="blue-grey-10"/>
+          <q-btn label="Limpar Campos" type="reset" color="blue-grey-10" flat class="q-ml-sm" />
         </div>
       </q-form>
     </q-card>
@@ -62,7 +65,7 @@ export default {
   border-radius: 12px;
 }
 #header{
-  background-color: #0d47a1;
+  background-color: #455a64;
   color: white;
   padding: 10px 5px 0 5px;
   border-radius: 12px 12px 0 0;

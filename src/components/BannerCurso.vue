@@ -12,7 +12,7 @@
       :width="400"
       :breakpoint="700"
       elevated
-      class="bg-primary text-white"
+      class="blue-grey-7 text-white"
   >
       <ListDrawer/>
   </q-drawer>
@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 #banner{
-  background-color: #1976d2;
+  background-color: #455a64;
   display: flex;
   align-items: center;
   align-content: center;
@@ -53,7 +53,7 @@ export default {
 }
 #next{
   background-color: white;
-  color: #0d47a1;
+  color: #455a64;
   font-weight: bolder;
   margin-right: 10px;
 }

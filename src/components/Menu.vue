@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <q-list bordered class="row flex-center" style="padding: 10px; background-color: #093366">
+    <q-list bordered class="row flex-center" style="padding: 10px; background-color: #37474f">
       <q-item clickable v-ripple>
         <q-item-section class="text-white" style="font-weight: bolder">PROGRAMAÇÃO</q-item-section>
       </q-item>

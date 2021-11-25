@@ -1,5 +1,5 @@
 <template>
-  <q-footer id="footer" style="background-color: #051d3b" class="footer text-white">
+  <q-footer id="footer" style="background-color: #263238" class="footer text-white">
     <div id="menu" class="q-pa-md row justify-between">
 
       <div class="column items-center q-pa-sm">

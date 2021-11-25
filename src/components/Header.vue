@@ -100,7 +100,7 @@ export default {
 #header{
   padding-right: 10px;
   padding-left: 10px;
-  background-color: #051933;
+  background-color: #263238;
 }
 
 .vl {

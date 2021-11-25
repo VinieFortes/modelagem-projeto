@@ -3,7 +3,7 @@
     <p id="title">Conheça Nossos Planos</p>
     <div class="row justify-evenly">
       <q-card v-for="card in cardsPlanos" v-bind:key="card" id="card" bordered class="shadow-2">
-        <q-icon :name=card.icon size="md" color="primary"></q-icon>
+        <q-icon :name=card.icon size="md" color="blue-grey-7"></q-icon>
         <p id="nomePlano">{{card.nome_plano}}</p>
         <p id="desconto">{{ card.desconto }}</p>
         <p id="parcelas">{{ card.parcelas }}</p>
@@ -12,7 +12,7 @@
         <q-list bordered>
           <q-item v-for="item in list" v-bind:key="item" v-ripple>
             <q-item-section avatar>
-              <q-icon color="primary" name="check" />
+              <q-icon color="blue-grey-7" name="check" />
             </q-item-section>
             <q-item-section>{{item}}</q-item-section>
           </q-item>
@@ -43,7 +43,7 @@ export default {
   font-size: 30px;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #082c57;
+  color: #263238;
   padding-top: 2%;
   align-self: center;
   position: relative;
@@ -56,7 +56,7 @@ export default {
   margin-bottom: 30px;
   border-radius: 14px;
   padding: 5px;
-  border-top: #0d47a1 solid;
+  border-top: #455a64 solid;
 }
 #card:hover {
   animation: animationcard 500ms linear;
@@ -81,23 +81,23 @@ export default {
   border-radius: 6px;
 }
 #nomePlano{
-  color: #1976d2;
+  color: #455a64;
   font-size: 22px;
   font-weight: bolder;
 }
 #parcelas{
-  color: #0d47a1;
+  color: #455a64;
   font-size: 16px;
   line-height: 10px;
 }
 #preco{
-  color: #051d3b;
+  color: #263238;
   font-weight: bolder;
   font-size: 34px;
   line-height: 20px;
 }
 #condicao{
-  color: #0d47a1;
+  color: #455a64;
   font-size: 16px;
 }
 </style>
