@@ -1,13 +1,37 @@
 <template>
 <div ref="cursos" id="ViewCursos" class=" row flex-center">
   <p>Conheça nossos cursos</p>
-  <q-btn rounded id="login">ver todos</q-btn>
+  <q-btn v-if="nome_btn === 'ver todos'" @click="showAll(true)" rounded id="login">{{ nome_btn }}</q-btn>
+  <q-btn v-else-if="nome_btn === 'ver menos'" @click="showAll(false)" rounded id="login">{{ nome_btn }}</q-btn>
 </div>
+  <Card :btn_show-all="btn_showAll"/>
 </template>
 
 <script>
+import Card from "@/components/Card";
+
 export default {
-  name: "CursosView"
+  name: "CursosView",
+  data(){
+    return{
+      btn_showAll: false,
+      nome_btn: 'ver todos'
+    }
+  },
+  components:{
+    Card
+  },
+  methods: {
+    showAll(bool){
+      if(bool){
+        this.btn_showAll = true;
+        this.nome_btn = 'ver menos'
+      } else {
+        this.btn_showAll = false;
+        this.nome_btn = 'ver todos'
+      }
+    }
+  }
 }
 </script>
 

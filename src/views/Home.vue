@@ -3,7 +3,6 @@
       <Menu/>
       <Banner/>
       <CursosView/>
-      <Card/>
       <FormacoesView/>
       <PlanosView/>
       <BannerFooter/>
@@ -14,7 +13,6 @@
 import CursosView from "@/components/CursosView";
 import Menu from "@/components/Menu";
 import Banner from "@/components/Banner";
-import Card from "@/components/Card";
 import BannerFooter from "../components/BannerFooter";
 import FormacoesView from "@/components/FormacoesView";
 import PlanosView from "@/components/PlanosView";
@@ -28,7 +26,6 @@ export default {
     CursosView,
     Menu,
     Banner,
-    Card,
     PlanosView
   }
 }

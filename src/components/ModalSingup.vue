@@ -39,7 +39,16 @@
             color="blue-grey-10"
             :rules="[ val => val && val.length > 0 || 'O campo de senha não pode ficar em branco !']"
         />
-        <q-checkbox v-model="teal" label="Concordo com todos termos e bla bla" color="blue-grey-10"/>
+        <q-input
+            filled
+            v-model="url"
+            type="url"
+            label="Link de uma imagem"
+            lazy-rules
+            color="blue-grey-10"
+            :rules="[ val => val && val.length > 0 || 'O campo de link não pode ficar em branco !']"
+        />
+        <q-checkbox  v-model="checkbox" label="Concordo com todos termos e bla bla" color="blue-grey-10"/>
         <div>
           <q-btn label="Cadastrar" type="submit" color="blue-grey-10"/>
           <q-btn label="Limpar Campos" type="reset" color="blue-grey-10" flat class="q-ml-sm" />
@@ -52,7 +61,31 @@
 <script>
 export default {
   name: "ModalLogin",
-  emits: ['close']
+  emits: ['close'],
+
+  data(){
+    return{
+      name: '',
+      email: '',
+      password: '',
+      url: '',
+      checkbox: false,
+      obj: {},
+    }
+  },
+  methods: {
+    onSubmit(){
+      if(this.checkbox === false) {
+        window.alert("Aceite os termos para se cadastrar !");
+      }
+      else {
+        this.obj = {nome: this.name, e_mail: this.email, pass: this.password, link: this.url}
+        window.localStorage.setItem ('cadastro', JSON.stringify (this.obj));
+        window.localStorage.setItem ('login', '1')
+        document.location.reload (true);
+      }
+    }
+  }
 }
 </script>
 
@@ -60,7 +93,7 @@ export default {
 #card{
   background-color: white;
   margin: 0 auto;
-  height: 500px;
+  height: 530px;
   width: 350px;
   border-radius: 12px;
 }
@@ -76,7 +109,6 @@ p{
   padding-left: 5px;
 }
 form {
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -21,7 +21,7 @@
         <q-item>
           <q-item-section>
             <q-item-label overline style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 10px">FALE COM A GENTE</q-item-label>
-            <q-item-label style="color: white; margin-bottom: 5px">Email: contato@ProjetoModelagem.com.br</q-item-label>
+            <q-item-label style="color: white; margin-bottom: 5px">Email: contato@commitmaster.com.br</q-item-label>
             <q-item-label style="color: white; margin-bottom: 25px">Fone: +(55) 33 9946-8565</q-item-label>
             <q-item-label style="color: white; margin-bottom: 5px"><a class="fa fa-whatsapp" style="font-size: 15px; width: 100%; text-align: start; text-decoration: none;"> Nos chame no WhatsApp</a></q-item-label>
           </q-item-section>

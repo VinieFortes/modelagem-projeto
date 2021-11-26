@@ -61,7 +61,7 @@ export default {
 #card{
   background-color: white;
   margin: 0 auto;
-  height: 400px;
+  height: 300px;
   width: 350px;
   border-radius: 12px;
 }
@@ -77,7 +77,6 @@ p{
   padding-left: 5px;
 }
 form {
-  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;

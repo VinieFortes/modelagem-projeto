@@ -17,7 +17,7 @@
 
     <div v-else class="row">
       <div class="btnWhite">
-        <q-btn flat >Meus Cursos</q-btn>
+        <q-btn @click="$router.push('/meus_cursos')" flat >Meus Cursos</q-btn>
         <q-btn flat >Meu Plano</q-btn>
       </div>
       <div class="vl2"></div>
@@ -56,7 +56,9 @@ export default {
     return {
       userLogado: false,
       username: 'Nome usuario',
-      userPhoto: 'https://cdn.quasar.dev/img/avatar.png'
+      userPhoto: 'https://cdn.quasar.dev/img/avatar.png',
+      retrievedObject: null,
+      cadastroObj: {}
     }
   },
 
@@ -67,6 +69,15 @@ export default {
     else {
       this.userLogado = false
     }
+    if(localStorage.getItem('cadastro')){
+      this.retrievedObject = localStorage.getItem('cadastro');
+      this.cadastroObj = JSON.parse(this.retrievedObject);
+
+      this.username = this.cadastroObj.nome
+      this.userPhoto = this.cadastroObj.link
+    }
+
+
   },
 
   emits: ['login', 'singup'],
