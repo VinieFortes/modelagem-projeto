@@ -32,7 +32,7 @@ export default {
           {icon: "lightbulb", nome_plano: "Plano Pleno", desconto: "Desconto 5%", parcelas: "12X", preco: "R$99,99", condicao: "à vista"},
           {icon: "military_tech", nome_plano: "Plano Sênior", desconto: "Desconto 3%", parcelas: "12X", preco: "R$199,99", condicao: "à vista"}
       ],
-      list: ["Acesso a todos os curos da plataforma", "Desafios diarios", "Certificado", "Aulas de Inglês Gratuitas"]
+      list: ["Acesso a todos os cursos da plataforma", "Desafios diarios", "Certificado", "Aulas de Inglês Gratuitas"]
     }
   }
 }
